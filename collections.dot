@@ -1,0 +1,9 @@
+digraph G {
+    returned_books [label="returned(books)"];
+    returned_books -> books;
+    books -> book_n;
+    book_n [label="book(N)"]; 
+    returned_book_n [label="returned(book) = book(n)"]; 
+    returned_book_n -> book_n;
+    
+}
